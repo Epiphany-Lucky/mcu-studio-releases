@@ -1,0 +1,14 @@
+Copyright (c) 2026 Epiphany-Lucky. All rights reserved.
+
+The original MCU Studio application code is proprietary. Its source repository
+is private. Permission is granted to run lawfully obtained official application
+binaries. Redistribution or modification of the proprietary application
+requires permission from the copyright holder.
+
+The bundled teaching firmware source may be modified and rebuilt for local
+embedded experiments.
+
+Third-party software, runtime libraries, reference material and explicitly
+licensed teaching examples retain their respective licenses. Their applicable
+rights and obligations are described in THIRD_PARTY_NOTICES.md and the
+corresponding license files. Rights granted by those licenses continue to apply.
