@@ -2,7 +2,7 @@
 
 STM32F407 嵌入式固件仿真工作台。使用 Apple 风格界面，在本地载入真实 HEX/BIN，连接虚拟外设并观察实际程序运行。
 
-当前版本为 **0.1.0 开发预览**，目标芯片为 STM32F407ZGT6。
+当前版本为 **0.1.0 开发预览**，目标芯片为 STM32F407ZGT6，提供 LQFP144 全引脚工作台。
 
 ## 下载
 
@@ -28,7 +28,11 @@ Windows 桌面壳使用 Edge WebView2。Linux 版使用系统图形浏览器。�
 
 CH340 与 RS485 支持选择使用。RS485 方向来自固件控制的 GPIO。LCD 使用 ILI9341 SPI 240×320 RGB565，OLED 使用 SSD1306 128×64。实际接线、GPIO 模式和复用配置共同决定通信与显示。[快速开始](docs/quick-start.md)
 
-配套实验包括 GPIO、按键与 EXTI、SysTick、PWM、CH340、RS485、ADC、DAC 引脚回接、OLED、SPI Flash、LCD、Bootloader 与 Flash。实际模型与验证结果见同版发行公告。
+主图和引脚表共同引出全部 144 个物理脚，含 114 个 GPIO 及独立编号的电源与专用脚。可按物理编号、端口或复用功能搜索并接线，封装顶视图支持放大至 400%。数据来自 DS8626 Rev 12 的图 14 和表 7。[ST 数据手册](https://www.st.com/resource/en/datasheet/stm32f407zg.pdf)
+
+配套菜单提供 28 项实验，包括 GPIO、按键与 EXTI、SysTick、PWM、CH340、RS485、ADC、DAC 引脚回接、OLED、SPI Flash、LCD、Bootloader、PLL、TIM1–TIM14 和输入捕获。界面显示实际系统与总线时钟、定时器计数和通道状态。TIM1/TIM8 可观察互补输出、死区、主输出使能和刹车，边沿记录来自后端实际输出事件。
+
+时钟路径覆盖 HSI、HSE 和 PLL，以及 AHB/APB 分频和 SysTick 的 HCLK/HCLK÷8 输入。定时器当前计数路径覆盖向上计数与边沿对齐，向下和中心对齐配置通过诊断提示。实际模型与验证结果见同版发行公告。
 
 ## 更新
 

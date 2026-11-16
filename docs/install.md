@@ -32,4 +32,8 @@ sudo apt remove mcu-studio
 
 ## 运行资源与许可
 
-运行包包含桌面壳或启动器、本地服务、Renode 后端、芯片配置、外设适配、Web 界面、实验固件及许可资料。第三方软件采用其各自许可，相关声明与对应源码资料见 `THIRD_PARTY_NOTICES.md`。
+运行包包含桌面壳或启动器、本地服务、Renode 后端、芯片配置、LQFP144 引脚定义、时钟与定时器适配、Web 界面、28 项实验菜单及许可资料。完整解压运行包，保留 `chips/`、`platforms/`、`peripherals/`、`runtime/`、`firmware/` 和 `web/` 的目录结构。
+
+软件启动后，可在引脚表搜索 1–144 的物理脚号，在时钟树查看 SYSCLK/HCLK/PCLK，在定时器面板选择 TIM1–TIM14。功能路径与操作见 [快速开始](quick-start.md)。
+
+第三方软件采用其各自许可，相关声明与对应源码资料见 `THIRD_PARTY_NOTICES.md`。
