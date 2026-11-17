@@ -21,6 +21,7 @@ The published package manifest records runtime files. The build manifest `runtim
 - Python is distributed under the Python Software Foundation license retained in `licenses/Python-LICENSE.txt`.
 - PyInstaller uses its bootloader distribution exception. Its terms are retained in `licenses/PyInstaller-COPYING.txt`.
 - Inno Setup 6.7.4 supplies the Windows installer engine. Its license is retained in `licenses/Inno-Setup-LICENSE.txt`.
+- WiX Toolset 5.0.2 and its UI extension supply MSI authoring and the original directory-validation custom action. Their Microsoft Reciprocal License is retained in `licenses/WiX5-LICENSE.txt`. The corresponding upstream source is available at [WiX 5.0.2 source](https://github.com/wixtoolset/wix/tree/aa65968c419420d32e3e1b647aea0082f5ca5b78). MCU Studio's migration bridge and recovery helper are separate original files using the Windows Installer API and .NET 10 runtime.
 - Linux desktop integration uses the operating system's default browser and `xdg-open`.
 
 The sample firmware and board configuration are part of the educational resources shipped by the project owner. External educational material is credited in the user documentation. Third-party embedded libraries, where included, retain their own notices.
