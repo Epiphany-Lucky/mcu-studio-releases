@@ -80,4 +80,4 @@ EXE与系统MSI更新helper均实际执行了安装器SHA-256校验、等待应�
 | 生产升级后的自动重启 | 失败，旧冻结进程环境继承导致Python DLL路径失效 |
 | Windows桌面正常启动与原工程恢复 | 已恢复，实际健康接口为0.2.0，原工程已导入 |
 
-生产交接记录位于`artifacts/public-update-v0.2.json`。原生错误对话框记录旧临时目录`_MEI0000beb02`的Python DLL加载失败。0.2.1将为安装helper及桌面新引擎设置PyInstaller独立实例环境，并验证旧客户端继承环境下的真实升级。0.2.0自动重启验收结果为失败。
+生产交接记录位于`artifacts/public-update-v0.2.json`。原生错误对话框记录旧临时目录`_MEI0000beb02`的Python DLL加载失败。0.2.0自动重启验收结果为失败。0.2.1为安装helper及桌面新引擎设置PyInstaller独立实例环境，已通过正式包的陈旧环境原生复验，以及本机0.2.0至0.2.1的公开更新、安装和自动重启。补验记录见`artifacts/public-update-v0.2.1.json`，对应新版验证文档随0.2.1发行。
