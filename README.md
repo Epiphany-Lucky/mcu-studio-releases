@@ -2,7 +2,7 @@
 
 STM32F407 嵌入式固件仿真工作台。使用 Apple 风格界面，在本地载入真实 HEX/BIN，连接虚拟外设并观察实际程序运行。
 
-当前版本为 **0.2.0 开发预览**，目标芯片为 STM32F407ZGT6，提供 LQFP144 全引脚工作台。
+当前版本为 **0.2.1 开发预览**，目标芯片为 STM32F407ZGT6，提供 LQFP144 全引脚工作台。
 
 ## 下载
 
@@ -10,12 +10,12 @@ STM32F407 嵌入式固件仿真工作台。使用 Apple 风格界面，在本地
 
 | 文件 | 用途 |
 |---|---|
-| `MCU-Studio-0.2.0-Setup-x64.msi` | Windows 单文件系统 MSI，需要管理员授权 |
-| `MCU-Studio-0.2.0-Setup-x64.exe` | Windows 当前用户安装，沿用 EXE 更新通道 |
-| `MCU-Studio-0.2.0-win-x64.zip` | Windows 便携目录 |
-| `MCU-Studio-0.2.0-html-local.zip` | Windows 本地浏览器工作台 |
-| `mcu-studio_0.2.0_amd64.deb` | Ubuntu/Debian amd64 安装 |
-| `MCU-Studio-0.2.0-linux-x64.tar.gz` | Linux 便携目录 |
+| `MCU-Studio-0.2.1-Setup-x64.msi` | Windows 单文件系统 MSI，需要管理员授权 |
+| `MCU-Studio-0.2.1-Setup-x64.exe` | Windows 当前用户安装，沿用 EXE 更新通道 |
+| `MCU-Studio-0.2.1-win-x64.zip` | Windows 便携目录 |
+| `MCU-Studio-0.2.1-html-local.zip` | Windows 本地浏览器工作台 |
+| `mcu-studio_0.2.1_amd64.deb` | Ubuntu/Debian amd64 安装 |
+| `MCU-Studio-0.2.1-linux-x64.tar.gz` | Linux 便携目录 |
 
 MSI 安装资源内嵌于同一文件，双击后通过 Windows 管理员授权执行系统安装，可选择安装路径。已有 EXE 安装可直接通过 EXE 通道更新。Windows 桌面壳使用 Edge WebView2。Linux 版使用系统图形浏览器。运行包提供本地执行后端。[安装说明](docs/install.md)
 
